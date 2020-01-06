@@ -1,0 +1,114 @@
+.headerNavigator {
+    position:relative;
+    padding:50px 10%;
+    display:grid;
+    grid-template-columns: 75% auto;
+    grid-gap:50px;
+    background-color:#FFF;
+    z-index:5;
+}
+
+.headerNavigator__content h1 {
+    margin-bottom:20px;
+    color:#333;
+    font-size:26px;
+    text-transform: uppercase;
+}
+
+.headerNavigator__content h1::after { background-color:#333; }
+
+.headerNavigator__content i {
+    font-size:15px;
+    color:#555;
+    line-height:27px;
+}
+
+.headerNavigator__buttons a {
+    display:block;
+    width:100%;
+    background-color:#333;
+    text-align: center;
+    color:#FFF;
+    font-weight:600;
+    font-size:16px;
+    padding:15px;
+    margin: 0 0 20px 0;
+    border-radius:5px;
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: none;
+}
+.headerNavigator__buttons a:hover {
+    background-color:#bd261b;
+}
+
+
+.headerSticky {
+    display:block;
+    position: sticky;
+    top:60px;
+    background-color:#bd261b;
+    padding:5px 10%;
+    text-align:right;
+    z-index:10;
+}
+.redBar {
+    background-color:#bd261b;
+    padding:5px 10%;
+    z-index:10;
+}
+.headerSticky a {
+    color:rgba(255,255,255, .8);
+    padding:5px 10px;
+    font-weight:200;
+    font-family:'Raleway', sans-serif;
+    font-size:14px;
+}
+
+.anchorView {
+    position:relative;
+    padding:50px 10%;
+    display:grid;
+    grid-template-columns: 50% auto;
+    box-shadow:inset 0 6px 8px rgba(0,0,0, .05);
+    grid-gap:50px;
+    background-color:#F9F9F9;
+    z-index:2;
+}
+.anchorId {
+    position:absolute;
+    top:-65px;
+}
+.anchorView__page {
+    font-family: 'raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:18px;
+    color:#777;
+}
+.anchorView__header {
+    font-family: 'raleway', sans-serif;
+    font-weight:600;
+    text-transform: uppercase;
+    font-size:28px;
+    color:#333;
+}
+
+.anchorView__links {
+    text-align: right;
+}
+.anchorView__links a {
+    position: relative;
+    padding:0 10px;
+    color:#777;
+    font-size:12px;
+    font-family: 'Lato', sans-serif;
+}
+.anchorView__links a:after {
+    content:'/';
+    display:inline-block;
+    text-align: right;
+}
+.anchorView__links a:last-child:after { content: ''; display:none;}
+
+
