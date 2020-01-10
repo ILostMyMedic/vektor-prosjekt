@@ -81,6 +81,7 @@ header {
     height:100%;
     background-size:cover;
     object-fit:cover;
+    background-position: center;
     background-repeat: no-repeat;
     /* filter: sepia(10%) contrast(100%) saturate(200%) hue-rotate(-0deg); */
 }

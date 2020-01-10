@@ -52,7 +52,7 @@ export default class Etterlysende extends Component {
             {
                 text: 'Vei- og infrastruktur',
                 link: '#vei-og-infrastrukture',
-            },
+            }
         ]
 
         this.links = buttons.map((item, key) =>

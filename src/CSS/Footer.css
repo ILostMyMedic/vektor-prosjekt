@@ -164,3 +164,37 @@ footer .button {
     line-height: 1.42857143;
     border-radius: 4px;
 }
+
+.kontakt-status {
+    position: relative;
+    display:block;
+    width:100%;
+    padding:10px 15px;
+    border-radius:4px;
+    background-color:rgba(14, 131, 20, 0.16);
+    border:1px solid rgb(11, 87, 21);
+}
+.kontakt-status.success {
+    background-color:rgba(14, 131, 20, 0.16);
+    border:1px solid rgb(11, 87, 21);
+}
+.kontakt-status.error {
+    background-color:rgba(131, 14, 43, 0.16);
+    border:1px solid rgb(87, 11, 17);
+}
+.kontakt-status h5 {
+    font-weight:600;
+    color:#f2f2f2;
+    font-size:14px;
+}
+.kontakt-status p {
+    color:#ccc;
+    font-size:14px;
+    padding:5px 0 0 0;
+}
+.kontakt-status i {
+    position: absolute;
+    top:0; right:0;
+    padding:10px;
+    color:#ddd;
+}

@@ -6,6 +6,7 @@ import '../CSS/headerNavigator.css';
 // import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom';
 import * as Href from '../components/Links';
+import ShowcaseTall from '../components/UI/showcase-tall';
 
 
 export default class Maritime extends Component {
@@ -70,6 +71,39 @@ export default class Maritime extends Component {
             }
         ]
 
+        let showcase = [
+            {
+                icon: 'fal fa-layer-group',
+                title: 'Waterproof PP foil',
+                text: 'All our plans are direct printed on high quality 500 micron waterproof PP foil, with additional paper copies for archive use. Other media options are available upon request.',
+            },
+            {
+                icon: 'fal fa-eye',
+                title: 'Hight resolution graphics',
+                text: 'All our products are made scalable for crisp representation in any size and format, both digital and printed.',
+            },
+            {
+                icon: 'fal fa-anchor',
+                title: 'Space saving solutions',
+                text: 'Our roll-up system keep all printed plans at hand while neatly stood away when not in use. Ideal for the bridge or engine control room where space is critical.',
+            },
+            {
+                icon: 'fal fa-repeat',
+                title: 'Planed revisions',
+                text: 'We offer maintenance contracts to ensure all drawings and plans produced by us are kept up to date and current. Combined with a signage plan all changes will digital check for possible missing signs and markings.',
+            },
+            {
+                icon: 'fal fa-cloud',
+                title: 'Modern workflow',
+                text: 'Optional cloud project spaces keep all progress and history available while avoiding e-mail size limited on board bu sharing documents as links.',
+            },
+            {
+                icon: 'fal fa-power-off',
+                title: 'Always on',
+                text: 'Quick turn arounds and good connections with authorities makes us the perfect companion where delays can result in large loss.',
+            },
+        ]
+
         return (
             <React.Fragment>
                 
@@ -97,7 +131,12 @@ export default class Maritime extends Component {
 
                     <div className="main-content">
 
-
+                    <ShowcaseTall 
+                        showcaseImage={"http://www.tuyodesign.com/Vektor2_0/img/maritime/escape_plan_on_rollup.png"} 
+                        showcaseTitle="Product features and options" 
+                        showcaseSubtitle="We provide a wide array of usable &amp; flexible features." 
+                        showcaseColumn={showcase}
+                    />
 
                     </div>
                 </main>

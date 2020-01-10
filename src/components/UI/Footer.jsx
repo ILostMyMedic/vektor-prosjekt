@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import '../../CSS/Footer.css';
 import * as Logo from '../../Images/footerVektorProsjektLogo.png';
 
-
 export default class Footer extends Component {
     constructor(props) {
         super(props);
@@ -12,6 +11,10 @@ export default class Footer extends Component {
             name: '',
             email: '',
             message: '',
+
+            sent: false,
+            errStatus: false,
+            error: 'En feil har oppstått',
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -25,16 +28,41 @@ export default class Footer extends Component {
 
         this.setState({[name]: value});
     }
-    handleSubmit(event) {
-        event.preventDefault();
 
-        let stateDate = `
-            Name: ${this.state.name},
-            Email: ${this.state.email},
-            Message: ${this.state.message}
-        `;
+    handleSubmit = () => {
+        const {name, email, message} = this.state;
 
-        console.log(stateDate);
+        fetch('http://mail-vektor.nxtbanks.com/mailer.php', { // URL fetch (post request to PHP)
+            method: 'POST',
+            header:{
+				'Accept': 'application/json',
+				'Content-type': 'application/json'
+			},
+            body: JSON.stringify({
+				// we will pass our input data to server
+                name: name,
+                email: email,
+                message: message
+            })
+        })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            if(responseJson.status === true){
+                this.setState({sent: true});
+                console.log(responseJson);
+            } else {
+                this.setState({errStatus: true, error: responseJson.error});
+            }
+        })
+        .catch((error)=>{
+            console.error(error);
+        })
+    }
+
+    closeSent = (e) => {
+        const target    = e.target;
+        const name      = target.getAttribute('data-close');
+        this.setState({[name]: false});
     }
 
     render() {
@@ -71,6 +99,26 @@ export default class Footer extends Component {
                         {/* Footer form, send email */}
                         <form onSubmit={e => e.preventDefault()}>
                             <h4>SEND OSS EN MELDING</h4>
+
+                            {
+                                this.state.sent ? (
+                                    <div className="kontakt-status success">
+                                        <i className="fal fa-times" data-close="sent" onClick={this.closeSent}></i>
+                                        <h5>Meldingen er sendt.</h5>
+                                        <p>Takk for at du har tatt kontakt med oss!</p>
+                                    </div>
+                                ) : (null)
+                            }
+                            {
+                                this.state.errStatus ? (
+                                    <div className="kontakt-status error">
+                                        <i className="fal fa-times" data-close="errStatus" onClick={this.closeSent}></i>
+                                        <h5>Meldingen ble ikke sendt.</h5>
+                                        {/* {this.state.error.map((item,i) => <p key={i}>{item}</p>)} */}
+                                        <p>Feilmelding.</p>
+                                    </div>
+                                ) : (null)
+                            }
 
                             <div className="input">
                                 <label htmlFor="name">

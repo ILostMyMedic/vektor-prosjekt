@@ -4,6 +4,11 @@ import Footer from './components/UI/Footer';
 import './CSS/styles.css';
 
 export default class App extends Component {
+  /** 
+   * @author Martin Johansen <martin.johansen.98@outlook.com> 
+   * @author Sara Løkken <saraloekken@gmail.com> 
+   * @version 1.0.0
+   */
 
   render() {
     return (
