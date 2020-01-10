@@ -17,7 +17,7 @@ export default class Etterlysende extends Component {
 
         this.state = {
             page: 'Etterlysende',
-            animateOnce: false,
+            animateOnce: true,
         }
     }    
     

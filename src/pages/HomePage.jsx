@@ -26,14 +26,16 @@ export default class HomePage extends Component {
                 
                 {/* Header / Slideshow */}
                 <Header 
-                    height='75vh'
+                    height='80vh'
                     anchor={true}
                     
                     content={[headers]}
                 />
 
                 {/* Main content for a page */}
-                <main id="main" className="grid">
+                <main  className="grid">
+                    <span id="main" className="anchorId"></span>
+
                     <ScrollAnimation animateIn="fadeInUp" className="grid-column">
                         <span><strong>Lorem Ipsum</strong> - dolor sit amet</span>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repellendus eaque atque autem nam? Temporibus, accusamus ducimus? Nisi vitae ab facilis maxime aperiam doloribus, eveniet ipsam, necessitatibus, obcaecati optio accusamus.Voluptate praesentium, alias et nemo ut cupiditate? Voluptas, dolorum ipsam! Placeat dolor perspiciatis hic pariatur, modi fugiat temporibus commodi aut sit eum! Laborum aperiam temporibus voluptas maxime quaerat rem quo.</p>

@@ -52,7 +52,7 @@ const Navigation = () => {
 
     return (
             <nav id="nav">
-                <NavLink exact to={Href.Home} className="logo">
+                <NavLink exact to={Href.Home} className="logo" onClick={navMenu}>
                     <img src={Logo} alt="Vektor Prosjekt Logo"/>
                 </NavLink>
 

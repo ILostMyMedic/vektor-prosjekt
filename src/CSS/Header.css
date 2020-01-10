@@ -44,6 +44,10 @@ header {
     height:120px;
     transition:.2s;
 }
+.slick-next:focus,
+.slick-prev:focus {
+    background-color:rgba(0,0,0, .16);
+}
 .slick-next::before, [dir="rtl"] .slick-prev::before {
     content: "\f054";
     font-family: "Font Awesome 5 Pro" !important;
@@ -127,4 +131,23 @@ header {
     font-size:28px;
     box-shadow:0 2px 1px rgba(0,0,0, .16);
     color:rgba(134, 134, 134, .4) !important;
+    transition:.2s;
+    overflow:hidden;
+}
+.header__anchor a i { transition:.2s; }
+
+.header__anchor a:hover {
+    background-color:#fff;
+}
+.header__anchor a:hover i {
+    color:#bd261b;
+    animation:arrowDown;
+    animation-duration: .5s;
+}
+
+@keyframes arrowDown {
+    0% { transform:translateY(0); opacity: 1;}
+    25% { transform:translateY(40px); opacity: 0;}
+    75% { transform:translateY(-40px); opacity: 0; }
+    100% { transform:translateY(0); opacity: 1;}
 }
