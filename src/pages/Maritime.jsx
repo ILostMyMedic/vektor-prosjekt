@@ -41,12 +41,12 @@ export default class Maritime extends Component {
 
         let buttons = [
             {
-                text: 'About Vektor Maritime',
-                link: '#about',
-            },
-            {
                 text: 'Services & Products',
                 link: '#services',
+            },
+            {
+                text: 'About Vektor Maritime',
+                link: '#about',
             },
             {
                 text: 'Contact ss',
@@ -61,12 +61,12 @@ export default class Maritime extends Component {
         )
         let links = [
             {
-                link: '#about',
-                text: 'About us',
-            },
-            {
                 link: '#services',
                 text: 'Products & services',
+            },
+            {
+                link: '#about',
+                text: 'About us',
             },
             {
                 link: '#contact',
@@ -164,40 +164,15 @@ export default class Maritime extends Component {
                     <span id="main" className="anchorId"></span>
                     <HeaderNavigator header={header} text={text} buttons={buttons} />
 
-
-
-                    <AnchorView 
-                        page={this.state.page}
-                        header='About us'
-                        links={links}
-                        anchor="about"
-                    />
-                    <div className="headerSticky">
-                        {this.links}
-                    </div>
-
-                    <div className="main-content">
-                        <Monster />
-                        <Iconic />
-                        <List 
-                            listHeader="Vektor maritime have earned the trust and business of leading shipowners internationally"
-                            listLeft={listLeft}
-                            listRight={listRight}
-                        />
-                    </div>
-
-
-
-
-
-
                     <AnchorView 
                         page={this.state.page}
                         header='PRODUCTS AND SERVICES'
                         links={links}
                         anchor="services"
                     />
-                    <div className="redBar"></div>
+                    <div className="headerSticky">
+                        {this.links}
+                    </div>
 
                     <div className="main-content aside">
                         <aside>
@@ -473,9 +448,6 @@ export default class Maritime extends Component {
                             </section>
                         </div>
 
-
-
-
                     {/* <ShowcaseTall 
                         showcaseImage={"http://www.tuyodesign.com/Vektor2_0/img/maritime/escape_plan_on_rollup.png"} 
                         showcaseTitle="Product features and options" 
@@ -484,6 +456,26 @@ export default class Maritime extends Component {
                     /> */}
 
                     </div>
+
+
+
+                    <AnchorView 
+                            page={this.state.page}
+                            header='About us'
+                            links={links}
+                            anchor="about"
+                        />
+                        <div className="redBar"></div>
+
+                        <div className="main-content">
+                            <Monster />
+                            <Iconic />
+                            <List 
+                                listHeader="Vektor maritime have earned the trust and business of leading shipowners internationally"
+                                listLeft={listLeft}
+                                listRight={listRight}
+                            />
+                        </div>
                 </main>
             </React.Fragment>
         )
