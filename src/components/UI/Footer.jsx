@@ -8,6 +8,7 @@ export default class Footer extends Component {
         super(props);
 
         this.state = {
+            backToTop: true,
             name: '',
             email: '',
             message: '',
@@ -65,10 +66,23 @@ export default class Footer extends Component {
         this.setState({[name]: false});
     }
 
+    backToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <footer>
-                <div className="footer__bar">Ta kontakt for en uforpliktende prat. Kontakt oss her!</div>
+                {
+                    this.state.backToTop ? (
+                        <div className="backToTop">
+                            <span className="fal fa-angle-up" onClick={this.backToTop}></span>
+                        </div>
+                    ) : (null)
+                }
+
+
+                {/* <div className="footer__bar">Ta kontakt for en uforpliktende prat. Kontakt oss her!</div> */}
 
                 <div className="footer__body">
                     <div className="footer__info">
@@ -84,14 +98,6 @@ export default class Footer extends Component {
                         <span>
                             <p>Telefon: 61 13 90 00</p>
                             <p>E-post: post@vektorprosjekt.no</p>
-                            {/* <p className="section__title">Avdeling Stord:   </p>
-                            <p>Bleikjehaugen Bygg B 1.etg</p>
-                            <p>5411 Stord</p> */}
-                        </span>
-
-                        <span>
-                            <p>Telefon Stord: 534 10 243</p>
-                            <p>E-post Stord: post@vektorprosjekt.no</p>
                         </span>
                     </div>
 
@@ -174,15 +180,15 @@ export default class Footer extends Component {
                         <p className="footer__left">
                             Copyrights © {(new Date().getFullYear())} All Rights Reserved by Vektor Prosjekt AS
                             <span className="p">
-                                <Link to={''}>Terms of user</Link> /
-                                <Link to={''}>Privacy Policy</Link>
+                                <Link to={'#'}>Terms of user</Link> /
+                                <Link to={'#'}>Privacy Policy</Link>
                             </span>
                         </p>
 
                         <p className="footer__right">
-                            <i className="fal fa-envelope"></i> post@vektorprosjekt.no 
+                            <a href="mailto:post@vektorprosjekt.no"><i className="fal fa-envelope"></i> post@vektorprosjekt.no</a>
                             &nbsp;
-                            <i className="fal fa-phone"></i> +47 611 39 000
+                            <a href="tel:+4761139000"><i className="fal fa-phone"></i> +47 611 39 000</a>
                         </p>
                     </span>
                 </div>

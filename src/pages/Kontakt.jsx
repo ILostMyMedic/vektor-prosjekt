@@ -8,6 +8,9 @@ export default class Kontakt extends Component {
         return (
             <React.Fragment>
                 <main className="main">
+                    <span id="main" className="anchorId"></span>
+
+                    
                     <section>
                         <h1>Kontakt oss</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur optio ad libero commodi atque possimus dolor incidunt doloremque. Rem itaque ea consequatur veniam accusamus perspiciatis, officiis quaerat architecto dolorum.

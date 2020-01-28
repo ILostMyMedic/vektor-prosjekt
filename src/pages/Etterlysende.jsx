@@ -82,12 +82,14 @@ export default class Etterlysende extends Component {
                 <Header 
                     height='55vh'
                     anchor={false}
-                    
+                    animateOnce={true}
                     content={[headers]}
                 />
 
                 {/* Main content for a page */}
-                <main id="main">
+                <main>
+                    <span id="main" className="anchorId"></span>
+
                     <HeaderNavigator header={header} text={text} buttons={buttons} />
                     <AnchorView 
                         page={this.state.page}

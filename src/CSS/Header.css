@@ -88,6 +88,16 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     /* filter: sepia(10%) contrast(100%) saturate(200%) hue-rotate(-0deg); */
+    z-index:2;
+}
+.slide__bg:after {
+    content:'';
+    display:block;
+    background-color:rgba(45, 61, 84, .36);
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100vh;
+    z-index:-1;
 }
 .slide__content {
     padding:10% 10%;

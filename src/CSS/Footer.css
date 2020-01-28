@@ -2,8 +2,8 @@ footer {
     display:block;
     position: relative;
     width:100%; height:auto;
-    background-color:rgba(54,54,54, 1);
     overflow-x:hidden;
+    z-index:9999;
 }
 .footer__bar {
     background-color:#BD261B;
@@ -14,6 +14,7 @@ footer {
     font-size:12px;
     font-weight:600;
     letter-spacing: 1.5px;
+    z-index:99;
 }
 
 .footer__body {
@@ -21,6 +22,9 @@ footer {
     grid-template-columns: 45% auto;
     grid-gap:20px;
     padding:5% 10%;
+    z-index:99;
+    background-color:rgba(54,54,54, 1);
+    width:100%;
 }
 
 
@@ -29,6 +33,7 @@ footer {
     background-color:rgba(44,44,44, 1);
     color:rgba(255, 255, 255, 0.25);
     font-size:14px;
+    z-index:99;
 }
 .footer__grid {
     display:grid;
@@ -41,12 +46,12 @@ footer {
 .footer__left {
     text-align:left;
     font-size:11px;
-    color:#CCC;
+    color:rgba(255,255,255, .25);
     font-weight:200;
 }
 .footer__left span {
     margin-left:-10px;
-    color:#ccc;
+    color:rgba(255,255,255, .25);
     font-size:11px;
     font-weight:400;
     margin-bottom:0;
@@ -59,14 +64,14 @@ footer {
     text-decoration: underline;
     transition:.2s;
 }
-.footer__left a:hover {
-    color:rgb(255, 255, 255);
-}
 .footer__right {
     text-align:right;
     font-weight:200;
-    color:#CCC;
+    color:rgba(255,255,255, .25);
     font-size:12px;
+}
+.footer__right a {
+    color:rgba(255,255,255, .25);
 }
 .footer__info {
     background-image:url('../Images/world-map.png');
@@ -197,4 +202,27 @@ footer .button {
     top:0; right:0;
     padding:10px;
     color:#ddd;
+}
+
+.backToTop {
+    position: fixed;
+    bottom:20px; right:20px;
+    z-index:-1;
+}
+
+.backToTop span {
+    display:block;
+    height:50px; width:50px;
+    background-color:rgba(0,0,0, .36);
+    border-radius:4px;
+    transition:.2s;
+    font-size:34px;
+    text-align:center;
+    line-height:50px;
+    color:#FFF;
+    cursor:pointer;
+}
+.backToTop span:hover {
+    background-color:#BD261B;
+    text-decoration:none;
 }

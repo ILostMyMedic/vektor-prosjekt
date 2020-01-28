@@ -25,11 +25,11 @@ export default class Header extends Component {
             <div className="slide__page" key={key}>
                 <div className="slide__bg" style={{backgroundImage: `url(${item.backgroundImage})`}}>
                     <div className="slide__content">
-                    <ScrollAnimation animateIn="fadeInDown" duration={2}>
+                    <ScrollAnimation animateIn="fadeInDown" duration={2} animateOnce={this.props.animateOnce}>
                         <h1 className="slide__title">{item.title}</h1>
                     </ScrollAnimation>
 
-                    <ScrollAnimation animateIn="fadeInDown" duration={1}>
+                    <ScrollAnimation animateIn="fadeInDown" duration={1} animateOnce={this.props.animateOnce}>
                         <p className="slide__text">{item.text}</p>
                     </ScrollAnimation>
                     </div>
