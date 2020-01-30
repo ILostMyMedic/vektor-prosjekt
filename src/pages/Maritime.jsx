@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Header from '../components/UI/header';
 import HeaderNavigator from '../components/UI/headerNavigator';
 import AnchorView from '../components/UI/anchorView';
@@ -17,11 +17,23 @@ export default class Maritime extends Component {
     constructor(props) {
         super(props);
 
+        this.aside=null;
+
         this.state = {
             page: 'Vektor aritime', // Display for each section title
             animateOnce: true,
         }
     }  
+
+    updateMenu(navLink){
+        const button = this.aside.querySelector(`a[href="${navLink}"]`);
+        console.log(button, navLink);
+        if (button != null) {
+
+            this.aside.querySelectorAll("a.active").forEach(a=>a.classList.remove("active"));
+            button.classList.add("active");
+        }
+    }
 
     render() {
         window.scrollTo(0, 0);
@@ -174,7 +186,7 @@ export default class Maritime extends Component {
                         {this.links}
                     </div>
 
-                    <div className="main-content aside">
+                    <div className="main-content aside" ref={a=>{this.aside=a}}>
                         <aside>
                             <ul>
                                 <li><a href="#fire">Fire control <br />and safety plan</a></li>
@@ -193,6 +205,7 @@ export default class Maritime extends Component {
                         </aside>
                         
                         <div className="grid-bg">
+                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#fire")} animateIn="fadeInLeft">
                             <section className="main-grid" id="fire">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <img src='https://via.placeholder.com/450x450' alt=""/>
@@ -216,7 +229,8 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                             </section>
-
+                        </ScrollAnimation>
+                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#emergency")} animateIn="fadeInLeft">
                             <section className="main-grid" id="emergency">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="left">Emergency plan</h1>
@@ -238,7 +252,9 @@ export default class Maritime extends Component {
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bunker")} animateIn="fadeInLeft">
                             <section className="main-grid" id="bunker">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
@@ -265,7 +281,8 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                             </section>
-
+                            </ScrollAnimation>
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#isps")} animateIn="fadeInLeft">
                             <section className="main-grid" id="isps">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="left">ISPS Packages Restricted Area Plans</h1>
@@ -281,7 +298,10 @@ export default class Maritime extends Component {
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#crew")} animateIn="fadeInLeft">
                             <section className="main-grid" id="crew">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
@@ -307,7 +327,9 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#posters")} animateIn="fadeInLeft">
                             <section className="main-grid" id="posters">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="left">Think Safety Posters</h1>
@@ -322,6 +344,7 @@ export default class Maritime extends Component {
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
                             <section className="main-grid" id="imo">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
