@@ -10,7 +10,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Monster from '../components/UI/monster';
 import Iconic from '../components/UI/Iconic';
 import List from '../components/UI/list';
-
+import * as firecontrolandsafetyplan from '../Images/fireplan.png';
+import * as emergencyplan from '../Images/emergencyplan.png';
+import * as bunkerplan from '../Images/bunkerplan.png';
 
 
 export default class Maritime extends Component {
@@ -208,7 +210,7 @@ export default class Maritime extends Component {
                         <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#fire")} animateIn="fadeInLeft">
                             <section className="main-grid" id="fire">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src='https://via.placeholder.com/450x450' alt=""/>
+                                <img src={firecontrolandsafetyplan} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Fire control and safety plan</h1>
@@ -250,7 +252,7 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={emergencyplan} />
                                 </ScrollAnimation>
                             </section>
                             </ScrollAnimation>
@@ -258,7 +260,7 @@ export default class Maritime extends Component {
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bunker")} animateIn="fadeInLeft">
                             <section className="main-grid" id="bunker">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={bunkerplan} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Bunker plan</h1>
