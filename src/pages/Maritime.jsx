@@ -230,6 +230,7 @@ export default class Maritime extends Component {
                                 </ScrollAnimation>
                             </section>
                         </ScrollAnimation>
+
                         <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#emergency")} animateIn="fadeInLeft">
                             <section className="main-grid" id="emergency">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -282,6 +283,7 @@ export default class Maritime extends Component {
                                 </ScrollAnimation>
                             </section>
                             </ScrollAnimation>
+
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#isps")} animateIn="fadeInLeft">
                             <section className="main-grid" id="isps">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -299,7 +301,6 @@ export default class Maritime extends Component {
                                 </ScrollAnimation>
                             </section>
                             </ScrollAnimation>
-
 
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#crew")} animateIn="fadeInLeft">
                             <section className="main-grid" id="crew">
@@ -346,6 +347,7 @@ export default class Maritime extends Component {
                             </section>
                             </ScrollAnimation>
 
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#imo")} animateIn="fadeInLeft">
                             <section className="main-grid" id="imo">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
@@ -371,7 +373,9 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#other")} animateIn="fadeInLeft">
                             <section className="main-grid" id="other">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="left">Other Plans</h1>
@@ -394,7 +398,9 @@ export default class Maritime extends Component {
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#consulting")} animateIn="fadeInLeft">
                             <section className="main-grid" id="consulting">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
@@ -416,7 +422,9 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#roll-up")} animateIn="fadeInLeft"> 
                             <section className="main-grid" id="roll-up">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="left">Roll up</h1>
@@ -433,7 +441,9 @@ export default class Maritime extends Component {
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#frame")} animateIn="fadeInLeft"> 
                             <section className="main-grid" id="frame">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
@@ -450,7 +460,9 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
 
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#finishing")} animateIn="fadeInLeft"> 
                             <section className="main-grid" id="finishing">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="left">Finishing</h1>
@@ -469,6 +481,8 @@ export default class Maritime extends Component {
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                             </section>
+                            </ScrollAnimation>
+                            
                         </div>
 
                     {/* <ShowcaseTall 
