@@ -1,0 +1,228 @@
+footer {
+    display:block;
+    position: relative;
+    width:100%; height:auto;
+    overflow-x:hidden;
+    z-index:9999;
+}
+.footer__bar {
+    background-color:#BD261B;
+    width:100%;
+    text-align:center;
+    color:#FFF;
+    padding:5px 0;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing: 1.5px;
+    z-index:99;
+}
+
+.footer__body {
+    display:grid;
+    grid-template-columns: 45% auto;
+    grid-gap:20px;
+    padding:5% 10%;
+    z-index:99;
+    background-color:rgba(54,54,54, 1);
+    width:100%;
+}
+
+
+.footer__bottom {
+    padding:20px 10%;
+    background-color:rgba(44,44,44, 1);
+    color:rgba(255, 255, 255, 0.25);
+    font-size:14px;
+    z-index:99;
+}
+.footer__grid {
+    display:grid;
+    grid-template-columns:repeat(2, 50%);
+    vertical-align:middle;
+    align-items: center;
+    margin:0;
+}
+
+.footer__left {
+    text-align:left;
+    font-size:11px;
+    color:rgba(255,255,255, .25);
+    font-weight:200;
+}
+.footer__left span {
+    margin-left:-10px;
+    color:rgba(255,255,255, .25);
+    font-size:11px;
+    font-weight:400;
+    margin-bottom:0;
+}
+.footer__left a {
+    display:inline-block;
+    padding:0 10px;
+    margin-top:5px;
+    color:rgba(255, 255, 255, 0.25);
+    text-decoration: underline;
+    transition:.2s;
+}
+.footer__right {
+    text-align:right;
+    font-weight:200;
+    color:rgba(255,255,255, .25);
+    font-size:12px;
+}
+.footer__right a {
+    color:rgba(255,255,255, .25);
+}
+.footer__info {
+    background-image:url('../Images/world-map.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width:100%;
+}
+.footer__info img {
+    filter:grayscale(1);
+    width:250px;
+}
+.footer__info span {
+    display:block;
+    margin:20px 0;
+    color:#CCC;
+    font-size:12px;
+    font-weight:200;
+    line-height:20px;
+}
+.footer__info span p.section__title {
+    font-weight:700;
+    color:rgb(236, 236, 236);
+}
+
+
+.footer__right {
+    float:right;
+}
+
+footer h4 {
+    color:#DDD;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.input {
+    display:block;
+    position:relative;
+    margin:10px 0;
+}
+.input label,
+.input input {
+    display:inline-block;
+}
+.input label {
+    font-size:14px;
+    padding:10px;
+    width:40px;
+    text-align:center;
+    border-radius:4px 0 0 4px;
+    color: #999;
+    background-color: rgba(0,0,0,0.35);
+    border:1px solid rgba(0,0,0,0.25);
+}
+footer input[type="text"],
+footer input[type="email"] {
+    float:right;
+}
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
+    font-size:14px;
+    padding:10px;
+    border-radius:0 4px 4px 0;
+    color: #999;
+    background-color: rgba(0,0,0,0.2);
+    border:1px solid rgba(0,0,0,0.25);
+    width:calc(100% - 40px);
+}
+footer textarea {
+    min-height:150px;
+    max-height:200px;
+    height:150px;
+    border-radius:4px;
+    width:100%;
+}
+footer .button {
+    color: #FFF;
+    background-color: #d9534f;
+    border:1px solid #d43f3a;
+
+    display: inline-block !important;
+    margin-bottom:0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+
+.kontakt-status {
+    position: relative;
+    display:block;
+    width:100%;
+    padding:10px 15px;
+    border-radius:4px;
+    background-color:rgba(14, 131, 20, 0.16);
+    border:1px solid rgb(11, 87, 21);
+}
+.kontakt-status.success {
+    background-color:rgba(14, 131, 20, 0.16);
+    border:1px solid rgb(11, 87, 21);
+}
+.kontakt-status.error {
+    background-color:rgba(131, 14, 43, 0.16);
+    border:1px solid rgb(87, 11, 17);
+}
+.kontakt-status h5 {
+    font-weight:600;
+    color:#f2f2f2;
+    font-size:14px;
+}
+.kontakt-status p {
+    color:#ccc;
+    font-size:14px;
+    padding:5px 0 0 0;
+}
+.kontakt-status i {
+    position: absolute;
+    top:0; right:0;
+    padding:10px;
+    color:#ddd;
+}
+
+.backToTop {
+    position: fixed;
+    bottom:20px; right:20px;
+    z-index:-1;
+}
+
+.backToTop span {
+    display:block;
+    height:50px; width:50px;
+    background-color:rgba(0,0,0, .36);
+    border-radius:4px;
+    transition:.2s;
+    font-size:34px;
+    text-align:center;
+    line-height:50px;
+    color:#FFF;
+    cursor:pointer;
+}
+.backToTop span:hover {
+    background-color:#BD261B;
+    text-decoration:none;
+}

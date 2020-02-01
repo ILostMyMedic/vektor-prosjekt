@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mail Index</title>
+</head>
+<body>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+            outline:0;
+        }
+        html, body {
+            font-family:sans-serif;
+        }
+        input, textarea {
+            width:540px;
+            padding:10px;
+            border-radius:4px;
+        }
+        input[type="submit"] {
+            background-color:#0077EE;
+            color:#FFF;
+            font-weight:600;
+            display:inline-block;
+            padding:10px 20px;
+        }
+    </style>
+    <form method="POST" action="mailer.php">
+        <input type="text" name="name"/><br />
+        <input type="text" name="email"/><br />
+
+        <textarea name="message"></textarea><br />
+
+        <input type="submit" name="submit" value="send mail"/>
+
+    </form>
+</body>
+</html>
