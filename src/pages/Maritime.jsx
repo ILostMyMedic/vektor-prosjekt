@@ -14,6 +14,9 @@ import * as firecontrolandsafetyplan from '../Images/fireplan.png';
 import * as emergencyplan from '../Images/emergencyplan.png';
 import * as bunkerplan from '../Images/bunkerplan.png';
 import * as idcards from '../Images/idcards.png';
+import * as raplans from '../Images/raplans.png';
+import * as imo from '../Images/imo.png';
+import * as otherplans from '../Images/otherplans.png';
 
 
 
@@ -48,6 +51,7 @@ export default class Maritime extends Component {
                 title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
                 text: '',
             }
+
         ];
 
         let header = 'VEKTOR MARITIME';
@@ -66,7 +70,7 @@ export default class Maritime extends Component {
                 link: '#about',
             },
             {
-                text: 'Contact ss',
+                text: 'Contact us',
                 link: '#contact',
             },
         ]
@@ -296,7 +300,7 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={raplans} />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
@@ -347,7 +351,7 @@ export default class Maritime extends Component {
 
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#imo")} animateIn="fadeInLeft" className="main-grid" id="imo">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={imo} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">IMO Signs and Posted Information</h1>
@@ -392,7 +396,7 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={otherplans} />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
