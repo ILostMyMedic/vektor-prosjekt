@@ -10,6 +10,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Monster from '../components/UI/monster';
 import Iconic from '../components/UI/Iconic';
 import List from '../components/UI/list';
+import * as firecontrolandsafetyplan from '../Images/fireplan.png';
+import * as emergencyplan from '../Images/emergencyplan.png';
+import * as bunkerplan from '../Images/bunkerplan.png';
+import * as idcards from '../Images/idcards.png';
 
 
 
@@ -49,6 +53,7 @@ export default class Maritime extends Component {
         let header = 'VEKTOR MARITIME';
         let text = `
         Vektor Maritime is the department and brand name for all maritime products of Vektor Prosjekt AS, a Norwegian company with more than 15 years of experience in serving the marine industry. Developing and revising safety documentation and signs for all types of vessels and offshore constructions.
+        We have aquired an unparralelled knowledge in the field and offer the complete consultation, design, production and update of a large variety of products all customized to the individual requirements of our customers.
         `;
 
         let buttons = [
@@ -208,7 +213,7 @@ export default class Maritime extends Component {
                             
                         <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#fire")} animateIn="fadeInLeft" className="main-grid" id="fire">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src='https://via.placeholder.com/450x450' alt=""/>
+                                <img src={firecontrolandsafetyplan} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Fire control and safety plan</h1>
@@ -248,13 +253,13 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={emergencyplan} />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bunker")} animateIn="fadeInLeft" className="main-grid" id="bunker">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={bunkerplan} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Bunker plan</h1>
@@ -298,7 +303,7 @@ export default class Maritime extends Component {
 
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#crew")} animateIn="fadeInLeft" className="main-grid" id="crew">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={idcards} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Crew and Visitors Identification ID Cards</h1>
