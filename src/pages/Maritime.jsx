@@ -17,6 +17,7 @@ import * as idcards from '../Images/idcards.png';
 import * as raplans from '../Images/raplans.png';
 import * as imo from '../Images/imo.png';
 import * as otherplans from '../Images/otherplans.png';
+import * as rollup from '../Images/rollup.png';
 
 
 
@@ -439,7 +440,7 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                <img src={rollup} />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
