@@ -105,8 +105,8 @@ footer {
 footer h4 {
     color:#DDD;
     margin-bottom: 25px;
-    font-size: 15px;
-    font-weight: 600;
+    font-weight:300;
+    font-size:15px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }

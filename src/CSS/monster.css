@@ -7,17 +7,20 @@
 }
 .monster__content {
     max-width:560px;
-    padding:120px 0;
+    padding:40px 0;
     text-align:left;
     margin:0 auto;
 }
 .monster__wrap h1 {
     text-align: center;
     text-transform: uppercase;
+    font-weight:300;
+    font-size:24px;
 }
 .monster__wrap h1:after { display:none; }
 
 .monster__wrap p {
     margin:20px 0;
     color:#444444;
+    font-size:14px;
 }
