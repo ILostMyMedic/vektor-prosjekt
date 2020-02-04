@@ -18,6 +18,7 @@ import * as raplans from '../Images/raplans.png';
 import * as imo from '../Images/imo.png';
 import * as otherplans from '../Images/otherplans.png';
 import * as rollup from '../Images/rollup.png';
+import * as ship from '../Images/ship.jpg';
 
 
 
@@ -49,6 +50,16 @@ export default class Maritime extends Component {
         let headers = [
             {
                 backgroundImage: 'http://www.tuyodesign.com/Vektor2_0/img/maritime/parallax/mar1.jpg',
+                title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
+                text: '',
+            },
+            {
+                backgroundImage: ship,
+                title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
+                text: '',
+            },
+            {
+                backgroundImage: raplans,
                 title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
                 text: '',
             }
