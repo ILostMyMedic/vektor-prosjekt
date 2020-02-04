@@ -240,8 +240,7 @@ export default class Maritime extends Component {
                                         compliance with the latest IMO / SOLAS
                                         regulations. We update your
                                         existing Fire Control and Safety Plans, or we can
-                                        create completely new Plans from scratch.
-
+                                        create completely new Plans from scratch. <p></p><br></br>
                                         Vektor Maritime take the full responsibility for
                                         the entire production, thus avoiding the problem
                                         of the tying up of personnel in your office. We
@@ -264,10 +263,10 @@ export default class Maritime extends Component {
                                         of each client and SOLAS regulations.
                                         The Emergency Plans are
                                         created digitally and in full color.
-
-                                        “Muster lists and emergency instructions complying with the requirements of regulation 37 shall be
+<p><br></br></p>
+                                        <i>“Muster lists and emergency instructions complying with the requirements of regulation 37 shall be
                                         exhibited in conspicuous places throughout the ship including the navigation bridge, engine-room
-                                        and crew accommodation spaces.”
+                                        and crew accommodation spaces.”</i>
                                         SOLAS Chapter III, Regulation 8
 
                                     </p>
@@ -297,11 +296,11 @@ export default class Maritime extends Component {
                                     meeting the requirements of CFR 33, part 155
                                     and 156 which we can produce according to
                                     ship specific details.
-
-                                    “The transfer procedures must be legibly printed
+                                    <p><br></br></p>
+                                    <i>“The transfer procedures must be legibly printed
                                     in a language or languages understood by
                                     personnel engaged in transfer operations and
-                                    permanently posted or available…”
+                                    permanently posted or available…”</i>
                                     33CFR155
                                     </p>
                                 </ScrollAnimation>
@@ -316,7 +315,7 @@ export default class Maritime extends Component {
                                     <p>
                                         We supply our clients with documentation that is crucial for CSO’s (Company Security
                                         Officer’s) in their work of mapping restricted areas on board the company’s
-                                        vessels.
+                                        vessels.<p><br></br></p>
                                         All our drawings, printed or digital format, are produced according to current
                                         regulations and standards.
                                     </p>
@@ -346,7 +345,7 @@ export default class Maritime extends Component {
                                         strips that hold specific information about the
                                         card holder or cards that are equipped with
                                         radio transmitters.
-
+                                        <p><br></br></p>
                                         We produce and manage your supply
                                         of visitor cards, stevedore cards, custom crew
                                         cards or any other form of ID card you may
@@ -391,7 +390,7 @@ export default class Maritime extends Component {
                                         among these, after glowing and reflective.
                                         You may browse our complete catalog and
                                         place your orders on-line or contact us for order
-                                        booklets.
+                                        booklets.<p><br></br></p>
                                         Custom made signs are also available according
                                         to customer specification. We handle everything
                                         from small replacement orders to complete
