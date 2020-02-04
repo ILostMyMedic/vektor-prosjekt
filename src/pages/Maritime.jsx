@@ -227,8 +227,10 @@ export default class Maritime extends Component {
                         
                         <div className="grid-bg">
                             
-                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#fire")} animateIn="fadeInLeft" className="main-grid" id="fire">
+
+                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#fire")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="fire"></div>
                                 <img src={firecontrolandsafetyplan} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -251,8 +253,10 @@ export default class Maritime extends Component {
                                 </ScrollAnimation>
                         </ScrollAnimation>
 
-                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#emergency")} animateIn="fadeInLeft" className="main-grid" id="emergency">
+
+                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#emergency")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="emergency"></div>
                                     <h1 className="left">Emergency plan</h1>
                                     <p>
                                         Vektor Maritime design, plot and frame
@@ -273,8 +277,11 @@ export default class Maritime extends Component {
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bunker")} animateIn="fadeInLeft" className="main-grid" id="bunker">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bunker")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="bunker"></div>
                                 <img src={bunkerplan} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -300,8 +307,11 @@ export default class Maritime extends Component {
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#isps")} animateIn="fadeInLeft" className="main-grid" id="isps">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#isps")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="isps"></div>
                                     <h1 className="left">ISPS Packages Restricted Area Plans</h1>
                                     <p>
                                         We supply our clients with documentation that is crucial for CSO’s (Company Security
@@ -317,8 +327,10 @@ export default class Maritime extends Component {
                             </ScrollAnimation>
 
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#crew")} animateIn="fadeInLeft" className="main-grid" id="crew">
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#crew")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="crew"></div>
                                 <img src={idcards} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -344,8 +356,10 @@ export default class Maritime extends Component {
                             </ScrollAnimation>
 
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#posters")} animateIn="fadeInLeft" className="main-grid" id="posters">
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#posters")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="posters"></div>
                                     <h1 className="left">Think Safety Posters</h1>
                                     <p>
                                         Our new think safety posters have quickly become one of our bestselling products
@@ -361,8 +375,9 @@ export default class Maritime extends Component {
 
 
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#imo")} animateIn="fadeInLeft" className="main-grid" id="imo">
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#imo")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="imo"></div>
                                 <img src={imo} />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -389,8 +404,9 @@ export default class Maritime extends Component {
 
 
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#other")} animateIn="fadeInLeft" className="main-grid" id="other">
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#other")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="other"></div>
                                     <h1 className="left">Other Plans</h1>
                                     <p>
                                         We are aware of the different needs and
@@ -414,8 +430,9 @@ export default class Maritime extends Component {
 
 
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#consulting")} animateIn="fadeInLeft" className="main-grid" id="consulting">
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#consulting")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="consulting"></div>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -438,8 +455,9 @@ export default class Maritime extends Component {
 
 
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#roll-up")} animateIn="fadeInLeft" className="main-grid" id="roll-up">
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#roll-up")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="roll-up"></div>
                                     <h1 className="left">Roll up</h1>
                                     <p>
                                         Both Bridge and ECR Rooms have requirements
@@ -457,8 +475,9 @@ export default class Maritime extends Component {
 
 
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#frame")} animateIn="fadeInLeft" className="main-grid" id="frame">
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#frame")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="frame"></div>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -476,8 +495,9 @@ export default class Maritime extends Component {
 
 
 
-                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#finishing")} animateIn="fadeInLeft" className="main-grid" id="finishing">
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#finishing")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="finishing"></div>
                                     <h1 className="left">Finishing</h1>
                                     <p>
                                         When wear and tear requires a little more than
@@ -494,10 +514,6 @@ export default class Maritime extends Component {
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                             </ScrollAnimation>
-
-
-
-
                         </div>
 
                     {/* <ShowcaseTall 
