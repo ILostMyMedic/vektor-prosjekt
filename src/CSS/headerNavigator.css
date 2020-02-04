@@ -47,7 +47,7 @@
 .headerSticky {
     display:block;
     position: sticky;
-    top:60px;
+    top:65px;
     background-color:#bd261b;
     padding:5px 10%;
     text-align:right;
