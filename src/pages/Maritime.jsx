@@ -266,7 +266,7 @@ export default class Maritime extends Component {
 <p><br></br></p>
                                         <i>“Muster lists and emergency instructions complying with the requirements of regulation 37 shall be
                                         exhibited in conspicuous places throughout the ship including the navigation bridge, engine-room
-                                        and crew accommodation spaces.”</i>
+                                        and crew accommodation spaces.”</i><p></p>
                                         SOLAS Chapter III, Regulation 8
 
                                     </p>
@@ -300,7 +300,7 @@ export default class Maritime extends Component {
                                     <i>“The transfer procedures must be legibly printed
                                     in a language or languages understood by
                                     personnel engaged in transfer operations and
-                                    permanently posted or available…”</i>
+                                    permanently posted or available…”</i> <p></p>
                                     33CFR155
                                     </p>
                                 </ScrollAnimation>
