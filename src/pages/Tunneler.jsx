@@ -95,7 +95,6 @@ export default class Tunneler extends Component {
                     />
                     <div className="headerSticky">
                         {this.links}
-                        <Link to={Href.Kontakt}>Kontakt oss</Link>
                     </div>
 
                      <div className="main-content aside">
@@ -127,7 +126,7 @@ STANDARDSKILT
                                     <img src='https://via.placeholder.com/450x450' alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="right">Fire control and safety plan</h1>
+                                    <h1 className="right">Dørmerking</h1>
                                     <p>
                                         Our Fire Control and Safety Plans are in
                                         compliance with the latest IMO / SOLAS
@@ -148,7 +147,7 @@ STANDARDSKILT
 
                             <section className="main-grid" id="emergency">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="left">Emergency plan</h1>
+                                    <h1 className="left">Standardskilt</h1>
                                     <p>
                                         Vektor Maritime design, plot and frame
                                         Emergency Plans according to the specifications
@@ -173,7 +172,7 @@ STANDARDSKILT
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="right">Bunker plan</h1>
+                                    <h1 className="right">Løpende mann</h1>
                                     <p>
                                     Vessels performing bunkering operations within
                                     U.S. waters or under U.S. Flag are required to
@@ -197,7 +196,7 @@ STANDARDSKILT
 
                             <section className="main-grid" id="isps">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="left">ISPS Packages Restricted Area Plans</h1>
+                                    <h1 className="left">Fare trafikk</h1>
                                     <p>
                                         We supply our clients with documentation that is crucial for CSO’s (Company Security
                                         Officer’s) in their work of mapping restricted areas on board the company’s
@@ -216,7 +215,7 @@ STANDARDSKILT
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="right">Crew and Visitors Identification ID Cards</h1>
+                                    <h1 className="right">Brannhydrantskilt</h1>
                                     <p>
                                         With the implementation of the ISPS Code
                                         the need for personal identification cards is
@@ -239,7 +238,7 @@ STANDARDSKILT
 
                             <section className="main-grid" id="posters">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="left">Think Safety Posters</h1>
+                                    <h1 className="left">Etterlysende stripe</h1>
                                     <p>
                                         Our new think safety posters have quickly become one of our bestselling products
                                         in the category of signs and posters. Tailor made to reinforce the shiping companies
@@ -257,7 +256,7 @@ STANDARDSKILT
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="right">IMO Signs and Posted Information</h1>
+                                    <h1 className="right">Avstandsskilt</h1>
                                     <p>
                                         As a part of our complete solution for maritime
                                         safety we can supply you with any required signs
@@ -280,7 +279,7 @@ STANDARDSKILT
 
                             <section className="main-grid" id="other">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="left">Other Plans</h1>
+                                    <h1 className="left">Bokstavskilt</h1>
                                     <p>
                                         We are aware of the different needs and
                                         requirements that apply to our customers and
@@ -306,7 +305,7 @@ STANDARDSKILT
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="right">Consulting</h1>
+                                    <h1 className="right">Tekstskilt</h1>
                                     <p>
                                         The many needs and requirements set by a
                                         variety of authorities can make the process of
@@ -325,7 +324,7 @@ STANDARDSKILT
 
                             <section className="main-grid" id="roll-up">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="left">Roll up</h1>
+                                    <h1 className="left">Trekantskilt</h1>
                                     <p>
                                         Both Bridge and ECR Rooms have requirements
                                         to post drawings, diagrams, information posters
@@ -345,7 +344,7 @@ STANDARDSKILT
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="right">Frame kit</h1>
+                                    <h1 className="right">Profilnummerskilt</h1>
                                     <p>
                                         If gluing posters and plans directly on the
                                         bulkhead is not your preference, we also deliver
@@ -359,7 +358,7 @@ STANDARDSKILT
 
                             <section className="main-grid" id="finishing">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="left">Finishing</h1>
+                                    <h1 className="left">Etterlysende skilter</h1>
                                     <p>
                                         When wear and tear requires a little more than
                                         basic paper drawings.
