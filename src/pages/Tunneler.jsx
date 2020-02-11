@@ -112,11 +112,12 @@ STANDARDSKILT
                                 <li><a href="#crew">- Brannhydrantskilt</a></li>
                                 <li><a href="#posters">- Etterlysende stripe</a></li>
                                 <li><a href="#imo">- Avstandsskilt</a></li>
-                                <li><a href="#other">Other Plans</a></li>
-                                <li><a href="#consulting">Consulting</a></li>
-                                <li><a href="#roll-up">Roll up</a></li>
-                                <li><a href="#frame">Frame kit</a></li>
-                                <li><a href="#finishing">Finishing</a></li>
+                                <li><a href="#other">- Bokstavskilt</a></li>
+                                <li><a href="#consulting">- Tekstskilt</a></li>
+                                <li><a href="#roll-up">- Trekantskilt</a></li>
+                                <li><a href="#frame">- Profilnummerskilt</a></li>
+                                <li><a href="#finishing">ETTERLYSENDE SKILTER</a></li>
+                                
                             </ul>
                         </aside>
                         
