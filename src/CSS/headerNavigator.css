@@ -11,7 +11,8 @@
 .headerNavigator__content h1 {
     margin-bottom:20px;
     color:#333;
-    font-size:26px;
+    font-weight:300;
+    font-size:24px;
     text-transform: uppercase;
 }
 
@@ -29,8 +30,8 @@
     background-color:#6A6A6A;
     text-align: left;
     color:#FFF;
-    font-weight:600;
-    font-size:16px;
+    font-weight:400;
+    font-size:14px;
     padding:15px;
     margin: 0 0 20px 0;
     border-radius:5px;
@@ -46,7 +47,7 @@
 .headerSticky {
     display:block;
     position: sticky;
-    top:60px;
+    top:65px;
     background-color:#bd261b;
     padding:5px 10%;
     text-align:right;
@@ -83,14 +84,14 @@
     font-family: 'raleway', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    font-size:18px;
+    font-size:16px;
     color:#777;
 }
 .anchorView__header {
     font-family: 'raleway', sans-serif;
-    font-weight:600;
     text-transform: uppercase;
-    font-size:28px;
+    font-weight:300;
+    font-size:24px;
     color:#333;
 }
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Header from '../components/UI/header';
 import HeaderNavigator from '../components/UI/headerNavigator';
 import AnchorView from '../components/UI/anchorView';
@@ -10,6 +10,15 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Monster from '../components/UI/monster';
 import Iconic from '../components/UI/Iconic';
 import List from '../components/UI/list';
+import * as firecontrolandsafetyplan from '../Images/fireplan.png';
+import * as emergencyplan from '../Images/emergencyplan.png';
+import * as bunkerplan from '../Images/bunkerplan.png';
+import * as idcards from '../Images/idcards.png';
+import * as raplans from '../Images/raplans.png';
+import * as imo from '../Images/imo.png';
+import * as otherplans from '../Images/otherplans.png';
+import * as rollup from '../Images/rollup.png';
+import * as ship from '../Images/ship.jpg';
 
 
 
@@ -17,11 +26,23 @@ export default class Maritime extends Component {
     constructor(props) {
         super(props);
 
+        this.aside=null;
+
         this.state = {
             page: 'Vektor aritime', // Display for each section title
             animateOnce: true,
         }
     }  
+
+    updateMenu(navLink){
+        const button = this.aside.querySelector(`a[href="${navLink}"]`);
+        console.log(button, navLink);
+        if (button != null) {
+
+            this.aside.querySelectorAll("a.active").forEach(a=>a.classList.remove("active"));
+            button.classList.add("active");
+        }
+    }
 
     render() {
         window.scrollTo(0, 0);
@@ -31,12 +52,24 @@ export default class Maritime extends Component {
                 backgroundImage: 'http://www.tuyodesign.com/Vektor2_0/img/maritime/parallax/mar1.jpg',
                 title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
                 text: '',
+            },
+            {
+                backgroundImage: ship,
+                title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
+                text: '',
+            },
+            {
+                backgroundImage: raplans,
+                title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
+                text: '',
             }
+
         ];
 
         let header = 'VEKTOR MARITIME';
         let text = `
         Vektor Maritime is the department and brand name for all maritime products of Vektor Prosjekt AS, a Norwegian company with more than 15 years of experience in serving the marine industry. Developing and revising safety documentation and signs for all types of vessels and offshore constructions.
+        We have aquired an unparralelled knowledge in the field and offer the complete consultation, design, production and update of a large variety of products all customized to the individual requirements of our customers.
         `;
 
         let buttons = [
@@ -49,7 +82,7 @@ export default class Maritime extends Component {
                 link: '#about',
             },
             {
-                text: 'Contact ss',
+                text: 'Contact us',
                 link: '#contact',
             },
         ]
@@ -174,7 +207,7 @@ export default class Maritime extends Component {
                         {this.links}
                     </div>
 
-                    <div className="main-content aside">
+                    <div className="main-content aside" ref={a=>{this.aside=a}}>
                         <aside>
                             <ul>
                                 <li><a href="#fire">Fire control <br />and safety plan</a></li>
@@ -193,9 +226,12 @@ export default class Maritime extends Component {
                         </aside>
                         
                         <div className="grid-bg">
-                            <section className="main-grid" id="fire">
+                            
+
+                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#fire")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src='https://via.placeholder.com/450x450' alt=""/>
+                                    <div className="gridAnchor" id="fire"></div>
+                                    <img src={firecontrolandsafetyplan} alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Fire control and safety plan</h1>
@@ -204,8 +240,7 @@ export default class Maritime extends Component {
                                         compliance with the latest IMO / SOLAS
                                         regulations. We update your
                                         existing Fire Control and Safety Plans, or we can
-                                        create completely new Plans from scratch.
-
+                                        create completely new Plans from scratch. <p></p><br></br>
                                         Vektor Maritime take the full responsibility for
                                         the entire production, thus avoiding the problem
                                         of the tying up of personnel in your office. We
@@ -215,10 +250,12 @@ export default class Maritime extends Component {
                                         construction.
                                     </p>
                                 </ScrollAnimation>
-                            </section>
+                        </ScrollAnimation>
 
-                            <section className="main-grid" id="emergency">
+
+                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#emergency")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="emergency"></div>
                                     <h1 className="left">Emergency plan</h1>
                                     <p>
                                         Vektor Maritime design, plot and frame
@@ -226,22 +263,25 @@ export default class Maritime extends Component {
                                         of each client and SOLAS regulations.
                                         The Emergency Plans are
                                         created digitally and in full color.
-
-                                        “Muster lists and emergency instructions complying with the requirements of regulation 37 shall be
+                                    <p><br></br></p>
+                                        <i>“Muster lists and emergency instructions complying with the requirements of regulation 37 shall be
                                         exhibited in conspicuous places throughout the ship including the navigation bridge, engine-room
-                                        and crew accommodation spaces.”
+                                        and crew accommodation spaces.”</i><p></p>
                                         SOLAS Chapter III, Regulation 8
 
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <img src={emergencyplan}  alt="" />
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="bunker">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bunker")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <div className="gridAnchor" id="bunker"></div>
+                                    <img src={bunkerplan}  alt="" />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Bunker plan</h1>
@@ -256,35 +296,41 @@ export default class Maritime extends Component {
                                     meeting the requirements of CFR 33, part 155
                                     and 156 which we can produce according to
                                     ship specific details.
-
-                                    “The transfer procedures must be legibly printed
+                                    <p><br></br></p>
+                                    <i>“The transfer procedures must be legibly printed
                                     in a language or languages understood by
                                     personnel engaged in transfer operations and
-                                    permanently posted or available…”
+                                    permanently posted or available…”</i> <p></p>
                                     33CFR155
                                     </p>
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="isps">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#isps")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="isps"></div>
                                     <h1 className="left">ISPS Packages Restricted Area Plans</h1>
                                     <p>
                                         We supply our clients with documentation that is crucial for CSO’s (Company Security
                                         Officer’s) in their work of mapping restricted areas on board the company’s
-                                        vessels.
+                                        vessels.<p><br></br></p>
                                         All our drawings, printed or digital format, are produced according to current
                                         regulations and standards.
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <img src={raplans}  alt="" />
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="crew">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#crew")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <div className="gridAnchor" id="crew"></div>
+                                    <img src={idcards}  alt="" />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Crew and Visitors Identification ID Cards</h1>
@@ -299,17 +345,20 @@ export default class Maritime extends Component {
                                         strips that hold specific information about the
                                         card holder or cards that are equipped with
                                         radio transmitters.
-
+                                        <p><br></br></p>
                                         We produce and manage your supply
                                         of visitor cards, stevedore cards, custom crew
                                         cards or any other form of ID card you may
                                         require.
                                     </p>
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="posters">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#posters")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="posters"></div>
                                     <h1 className="left">Think Safety Posters</h1>
                                     <p>
                                         Our new think safety posters have quickly become one of our bestselling products
@@ -321,11 +370,14 @@ export default class Maritime extends Component {
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="imo">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#imo")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <div className="gridAnchor" id="imo"></div>
+                                    <img src={imo}  alt="" />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">IMO Signs and Posted Information</h1>
@@ -338,7 +390,7 @@ export default class Maritime extends Component {
                                         among these, after glowing and reflective.
                                         You may browse our complete catalog and
                                         place your orders on-line or contact us for order
-                                        booklets.
+                                        booklets.<p><br></br></p>
                                         Custom made signs are also available according
                                         to customer specification. We handle everything
                                         from small replacement orders to complete
@@ -347,10 +399,13 @@ export default class Maritime extends Component {
                                         self adhesive to mount on existing installations.
                                     </p>
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="other">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#other")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="other"></div>
                                     <h1 className="left">Other Plans</h1>
                                     <p>
                                         We are aware of the different needs and
@@ -368,12 +423,15 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <img src={otherplans}  alt="" />
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="consulting">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#consulting")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="consulting"></div>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -392,10 +450,13 @@ export default class Maritime extends Component {
                                         personnel and shortening production time.
                                     </p>
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="roll-up">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#roll-up")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="roll-up"></div>
                                     <h1 className="left">Roll up</h1>
                                     <p>
                                         Both Bridge and ECR Rooms have requirements
@@ -407,12 +468,15 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <img src={rollup}  alt="" />
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="frame">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#frame")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="frame"></div>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
@@ -426,10 +490,13 @@ export default class Maritime extends Component {
                                         mm plexiglass in front and 2 - 3 mm plate in back.
                                     </p>
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
 
-                            <section className="main-grid" id="finishing">
+
+
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#finishing")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                    <div className="gridAnchor" id="finishing"></div>
                                     <h1 className="left">Finishing</h1>
                                     <p>
                                         When wear and tear requires a little more than
@@ -445,7 +512,7 @@ export default class Maritime extends Component {
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <img src="https://via.placeholder.com/450x450" alt=""/>
                                 </ScrollAnimation>
-                            </section>
+                            </ScrollAnimation>
                         </div>
 
                     {/* <ShowcaseTall 
