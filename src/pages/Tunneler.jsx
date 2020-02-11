@@ -126,26 +126,22 @@ STANDARDSKILT
                                     <img src='https://via.placeholder.com/450x450' alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="right">Dørmerking</h1>
+                                    <h1 className="right">Fire control and safety plan</h1>
                                     <p>
-                                     Illustrasjon som viser vanlig merking av dører inn til tverrslag og dører
-inne i tverrslagene.
-Etterlysende stripe rundt dører inn til tverrslag fra kjørefelt er ofte
-erstattet med grønn LED stripe.
+                                        Our Fire Control and Safety Plans are in
+                                        compliance with the latest IMO / SOLAS
+                                        regulations. We update your
+                                        existing Fire Control and Safety Plans, or we can
+                                        create completely new Plans from scratch.
 
-Etterlysende ramme B=100mm
-Bokstavskilt 500x500mm
-Brannhydrant 500x500mm
-Stripe - Dør 1200x100mm
-
-Skilt over dør: 300x150mm
-Fareskilt 500x500mm
-Tekstskilt 500x270mm
-Stripe - Dør 1200x100mm
-
-Skilt over dør: 300x150mm
-Stripe - Dør 1200x100mm
-
+                                        Vektor Maritime take the full responsibility for
+                                        the entire production, thus avoiding the problem
+                                        of the tying up of personnel in your office. We
+                                        guarantee full compliance with regulations or
+                                        authorities as specified that may be related
+                                        to your cruise ship, cargo vessel or offshore
+                                        construction.
+                                    </p>
                                 </ScrollAnimation>
                             </section>
 
