@@ -24,7 +24,7 @@ export default class Tunneler extends Component {
         let headers = [
             {
                 backgroundImage: tunnelLys,
-                title: 'title 1',
+                title: 'Hei Sara',
                 text: 'text 1',
             },
             {
