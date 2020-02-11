@@ -231,7 +231,7 @@ export default class Maritime extends Component {
                         <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#fire")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="fire"></div>
-                                <img src={firecontrolandsafetyplan} />
+                                    <img src={firecontrolandsafetyplan} alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Fire control and safety plan</h1>
@@ -263,7 +263,7 @@ export default class Maritime extends Component {
                                         of each client and SOLAS regulations.
                                         The Emergency Plans are
                                         created digitally and in full color.
-<p><br></br></p>
+                                    <p><br></br></p>
                                         <i>“Muster lists and emergency instructions complying with the requirements of regulation 37 shall be
                                         exhibited in conspicuous places throughout the ship including the navigation bridge, engine-room
                                         and crew accommodation spaces.”</i><p></p>
@@ -272,7 +272,7 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                <img src={emergencyplan} />
+                                    <img src={emergencyplan}  alt="" />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
@@ -281,7 +281,7 @@ export default class Maritime extends Component {
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bunker")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="bunker"></div>
-                                <img src={bunkerplan} />
+                                    <img src={bunkerplan}  alt="" />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Bunker plan</h1>
@@ -321,7 +321,7 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                <img src={raplans} />
+                                    <img src={raplans}  alt="" />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
@@ -330,7 +330,7 @@ export default class Maritime extends Component {
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#crew")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="crew"></div>
-                                <img src={idcards} />
+                                    <img src={idcards}  alt="" />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Crew and Visitors Identification ID Cards</h1>
@@ -377,7 +377,7 @@ export default class Maritime extends Component {
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#imo")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="imo"></div>
-                                <img src={imo} />
+                                    <img src={imo}  alt="" />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">IMO Signs and Posted Information</h1>
@@ -423,7 +423,7 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                <img src={otherplans} />
+                                    <img src={otherplans}  alt="" />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
@@ -468,7 +468,7 @@ export default class Maritime extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                <img src={rollup} />
+                                    <img src={rollup}  alt="" />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 

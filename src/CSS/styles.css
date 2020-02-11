@@ -134,7 +134,7 @@ strong::after {
     display:grid;
     grid-template-columns: 360px auto;
     grid-gap:20px;
-    margin:50px auto;
+    margin:0 auto;
     padding:0 10%;
     align-items: center;
     overflow-x:hidden;
@@ -170,7 +170,7 @@ strong::after {
 }
 
 .main-grid {
-    padding:25px 5% !important;
+    padding:50px 5% !important;
 }
 .main-content .main-grid:nth-child(odd) {grid-template-columns: 360px auto; background-color:#FFF;}
 .main-content .main-grid:nth-child(even) {grid-template-columns: auto 360px; background-color:#F9F9F9;}

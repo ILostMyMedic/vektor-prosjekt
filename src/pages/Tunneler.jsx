@@ -6,6 +6,7 @@ import '../CSS/headerNavigator.css';
 // import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom';
 import * as Href from '../components/Links';
+import * as tunnelLys from '../Images/tunnel/tunnelLys.png';
 
 
 export default class Tunneler extends Component {
@@ -22,7 +23,7 @@ export default class Tunneler extends Component {
         
         let headers = [
             {
-                backgroundImage: 'http://www.tuyodesign.com/Vektor2_0/img/vektork/parallax/mdf-print-1.jpg',
+                backgroundImage: tunnelLys,
                 title: 'title 1',
                 text: 'text 1',
             },
