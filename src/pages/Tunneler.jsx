@@ -16,6 +16,9 @@ import * as bokstav from '../Images/3.png';
 import * as fare from '../Images/6.png';
 import * as brann from '../Images/4.png';
 
+import * as funksjonssikring from '../Images/tunnel/funksjonssikring.png';
+import * as belysning from '../Images/tunnel/belysning.png';
+
 
 
 export default class Tunneler extends Component {
@@ -403,7 +406,7 @@ export default class Tunneler extends Component {
                         <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bakplate")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="bakplate"></div>
-                                    <img src={firecontrolandsafetyplan} alt=""/>
+                                    <img src={tunnelLys} alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Avstandsskilt med bakplate, belysning av skilt og koblingsboks</h1>
@@ -427,7 +430,7 @@ export default class Tunneler extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src={emergencyplan}  alt="" />
+                                    <img src={belysning}  alt="" />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
@@ -436,7 +439,7 @@ export default class Tunneler extends Component {
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#koblingsbokser")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="koblingsbokser"></div>
-                                    <img src={bunkerplan}  alt="" />
+                                    <img src={funksjonssikring}  alt="" />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Funksjonssikre koblingsbokser i komposittmateriale samt funksjonssikre kabler</h1>

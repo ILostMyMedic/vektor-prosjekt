@@ -159,7 +159,14 @@ strong::after {
 .main-content .grid50 .main-grid:nth-child(odd),
 .main-content .grid50 .main-grid:nth-child(even) {
     grid-template-columns: 50% 50% !important;
+    padding:0 !important;
+    grid-gap:0 !important;
 }
+.main-content .grid50 .main-grid img {
+    max-width:none;
+}
+.main-content .grid50 .text { padding:0 5% !important; }
+
 
 .main-content aside {
     position: sticky;
