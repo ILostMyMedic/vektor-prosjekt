@@ -25,11 +25,13 @@ export default class Kopi extends Component {
                 backgroundImage: 'http://www.tuyodesign.com/Vektor2_0/img/vektork/parallax/mdf-print-1.jpg',
                 title: 'title 1',
                 text: 'text 1',
+                overlay: true
             },
             {
                 backgroundImage: 'http://www.tuyodesign.com/Vektor2_0/img/vektork/parallax/mdf-print-1.jpg',
                 title: 'title 2',
                 text: 'text 2',
+                overlay: true
             }
         ];
 

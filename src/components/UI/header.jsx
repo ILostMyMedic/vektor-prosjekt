@@ -23,7 +23,7 @@ export default class Header extends Component {
 
         this.content = this.props.content[0].map((item, key) =>
             <div className="slide__page" key={key}>
-                <div className="slide__bg" style={{backgroundImage: `url(${item.backgroundImage})`}}>
+                <div className={item.overlay ? ('slide__bg__overlay slide__bg') : ("slide__bg")} style={{backgroundImage: `url(${item.backgroundImage})`}}>
                     <div className="slide__content">
                     <ScrollAnimation animateIn="fadeInDown" duration={2} animateOnce={this.props.animateOnce}>
                         <h1 className="slide__title">{item.title}</h1>

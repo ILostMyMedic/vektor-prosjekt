@@ -21,11 +21,13 @@ export default class HomePage extends Component {
                 backgroundImage: Eika,
                 title: 'Lorem Ipsum - dolor sit amet',
                 text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repellendus eaque atque autem nam? Temporibus, accusamus ducimus? Nisi vitae ab facilis maxime aperiam doloribus, eveniet ipsam, necessitatibus, obcaecati optio accusamus.Voluptate praesentium, alias et nemo ut cupiditate? Voluptas, dolorum ipsam! Placeat dolor perspiciatis hic pariatur, modi fugiat temporibus commodi aut sit eum! Laborum aperiam temporibus voluptas maxime quaerat rem quo.',
+                overlay: true
             },
             {
                 backgroundImage: Sweco,
                 title: 'Lorem Ipsum - dolor sit amet',
                 text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repellendus eaque atque autem nam? Temporibus, accusamus ducimus? Nisi vitae ab facilis maxime aperiam doloribus, eveniet ipsam, necessitatibus, obcaecati optio accusamus.Voluptate praesentium, alias et nemo ut cupiditate? Voluptas, dolorum ipsam! Placeat dolor perspiciatis hic pariatur, modi fugiat temporibus commodi aut sit eum! Laborum aperiam temporibus voluptas maxime quaerat rem quo.',
+                overlay: true
             }
         ];
 

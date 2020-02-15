@@ -29,11 +29,13 @@ export default class Etterlysende extends Component {
                 backgroundImage: Ship,
                 title: 'Etterlysende produkter',
                 text: 'Forstårlig informasjon når liv står på spill.',
+                overlay: true
             },
             {
                 backgroundImage: Tunnel,
                 title: 'title 2',
                 text: 'text 2',
+                overlay: true
             }
         ];
 

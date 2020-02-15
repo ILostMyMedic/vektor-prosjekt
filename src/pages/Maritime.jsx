@@ -52,16 +52,19 @@ export default class Maritime extends Component {
                 backgroundImage: 'http://www.tuyodesign.com/Vektor2_0/img/maritime/parallax/mar1.jpg',
                 title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
                 text: '',
+                overlay: true
             },
             {
                 backgroundImage: ship,
                 title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
                 text: '',
+                overlay: true
             },
             {
                 backgroundImage: raplans,
                 title: 'UNDERSTANDABLE INFORMATION WHEN LIFE MATTERS',
                 text: '',
+                overlay: true
             }
 
         ];
@@ -207,7 +210,7 @@ export default class Maritime extends Component {
                         {this.links}
                     </div>
 
-                    <div className="main-content aside" ref={a=>{this.aside=a}}>
+                    <div className="main-content aside left" ref={a=>{this.aside=a}}>
                         <aside>
                             <ul>
                                 <li><a href="#fire">Fire control <br />and safety plan</a></li>
