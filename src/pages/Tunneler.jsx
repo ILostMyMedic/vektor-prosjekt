@@ -12,9 +12,14 @@ import * as raplans from '../Images/raplans.png';
 import * as imo from '../Images/imo.png';
 import * as rollup from '../Images/rollup.png';
 import * as lopende from '../Images/1.png';
+import * as teksts from '../Images/2.png';
+import * as stripe from '../Images/7.png';
 import * as bokstav from '../Images/3.png';
+import * as trekant from '../Images/5.png';
 import * as fare from '../Images/6.png';
 import * as brann from '../Images/4.png';
+import * as avstand from '../Images/8.png';
+import * as profil from '../Images/9.png';
 
 import * as funksjonssikring from '../Images/tunnel/funksjonssikring.png';
 import * as belysning from '../Images/tunnel/belysning.png';
@@ -246,7 +251,7 @@ export default class Tunneler extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <img src={stripe} alt=""/>
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
@@ -255,7 +260,7 @@ export default class Tunneler extends Component {
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#avstandsskilt")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="avstandsskilt"></div>
-                                    <img src={imo}  alt="" />
+                                    <img src={avstand}  alt="" />
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Avstandsskilt</h1>
@@ -295,7 +300,7 @@ export default class Tunneler extends Component {
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#tekstilt")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="tekstilt"></div>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <img src={teksts} alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Tekstskilt</h1>
@@ -328,7 +333,7 @@ export default class Tunneler extends Component {
                                     </p>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <img src={rollup}  alt="" />
+                                    <img src={trekant}  alt="" />
                                 </ScrollAnimation>
                             </ScrollAnimation>
 
@@ -337,7 +342,7 @@ export default class Tunneler extends Component {
                             <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#profilnummerskilt")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="profilnummerskilt"></div>
-                                    <img src="https://via.placeholder.com/450x450" alt=""/>
+                                    <img src={profil} alt=""/>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <h1 className="right">Profilnummerskilt</h1>
