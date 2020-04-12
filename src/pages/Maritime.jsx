@@ -29,7 +29,7 @@ export default class Maritime extends Component {
         this.aside=null;
 
         this.state = {
-            page: 'Vektor aritime', // Display for each section title
+            page: 'Vektor Maritime', // Display for each section title
             animateOnce: true,
         }
     }  
