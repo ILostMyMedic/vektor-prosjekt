@@ -398,25 +398,23 @@ export default class Tunneler extends Component {
                         </aside>
                         
                         <div className="grid-bg grid50">
-                            
-
-                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bakplate")} animateIn="fadeInLeft" className="main-grid">
-                                <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
-                                    <div className="gridAnchor" id="bakplate"></div>
-                                    <img src={firecontrolandsafetyplan} alt=""/>
-                                </ScrollAnimation>
-                                <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
-                                    <h1 className="right">Avstandsskilt med bakplate, belysning av skilt og koblingsboks</h1>
-                                    <p>
-                                        <p>Skiltet vil være godt lesbart i over 1 time etter at all strøm og belysning er borte.</p>
-                                        <br /><p>Både bakplate og skilt er produsert i syrefast stål ASI 316 L</p>
-                                        <br /><p>Skilt informasjon er silketrykket og dekket med en kraftig klar lakk som tåler høytrykksspyling.</p>
-                                    </p>
-                                </ScrollAnimation>
-                        </ScrollAnimation>
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#bakplate")} animateIn="fadeInLeft" className="main-grid">
+                                    <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column" animateOnce={this.state.animateOnce}>
+                                        <div className="gridAnchor" id="bakplate"></div>
+                                        <img src={firecontrolandsafetyplan} alt=""/>
+                                    </ScrollAnimation>
+                                    <ScrollAnimation animateIn="fadeInRight" className="main-grid__column text" animateOnce={this.state.animateOnce}>
+                                        <h1 className="right">Avstandsskilt med bakplate, belysning av skilt og koblingsboks</h1>
+                                        <p>
+                                            <p>Skiltet vil være godt lesbart i over 1 time etter at all strøm og belysning er borte.</p>
+                                            <br /><p>Både bakplate og skilt er produsert i syrefast stål ASI 316 L</p>
+                                            <br /><p>Skilt informasjon er silketrykket og dekket med en kraftig klar lakk som tåler høytrykksspyling.</p>
+                                        </p>
+                                    </ScrollAnimation>
+                            </ScrollAnimation>
 
 
-                        <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#belysning")} animateIn="fadeInLeft" className="main-grid">
+                            <ScrollAnimation duration={0} initiallyVisible={true} afterAnimatedIn={()=> this.updateMenu("#belysning")} animateIn="fadeInLeft" className="main-grid">
                                 <ScrollAnimation animateIn="fadeInLeft" className="main-grid__column text" animateOnce={this.state.animateOnce}>
                                     <div className="gridAnchor" id="belysning"></div>
                                     <h1 className="left">Nødbelysning-Armatur med innebygd koblingsboks</h1>
